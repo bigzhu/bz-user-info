@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-||||||| merged common ancestors
-<style lang='less'>
-  .hide{
-    display: none
-  }
-  .icon.github{
-    color:black
-  }
-</style>
-=======
 <style>
   .hide{
     display: none
@@ -17,7 +6,6 @@
     color:black
   }
 </style>
->>>>>>> 2c1a991b4bfd1dcc31e0cfe6e79884e870d9cce4
 <template>
   <div class="ui piled center aligned segment">
     <h4 class="ui header">{{user_info.user_name}}</h4>

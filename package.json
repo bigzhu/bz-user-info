@@ -1,20 +1,8 @@
 {
-<<<<<<< HEAD
-  "name": "bz-base",
-  "version": "2.0.0",
-  "description": "bz-base",
-  "main": "dist/main.js",
-||||||| merged common ancestors
-  "name": "bz-demo",
-  "version": "1.0.0",
-  "description": "bz-demo",
-  "main": "dist/main.js",
-=======
   "name": "bz-base",
   "version": "2.0.0",
   "description": "bz-base",
   "main": "src/Bz.vue",
->>>>>>> 2c1a991b4bfd1dcc31e0cfe6e79884e870d9cce4
   "keywords": [
     "vue",
     "component",
