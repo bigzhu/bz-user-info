@@ -1,11 +1,4 @@
-<style>
-  .hide{
-    display: none
-  }
-  .icon.github{
-    color:black
-  }
-</style>
+
 <template>
   <div class="ui piled center aligned segment">
     <h4 class="ui header">{{user_info.user_name}}</h4>
@@ -80,8 +73,8 @@
 <script>
   var toastr = require('toastr')
   var $ = require('jquery')
+  import avatar from './assets/avatar.svg'
 
-  // import {queryUserInfo, updateOrInsertUser} from '../store/actions'
   export default {
     components: {
     },
@@ -105,11 +98,12 @@
     },
     computed: {
       avatar: function () {
+        console.log(this.user_info.avatar)
         if (this.user_info.avatar) {
           var avatar_url = this.user_info.avatar
           return '/api_sp/' + window.btoa(window.btoa(avatar_url))
         } else {
-          return '/static/avatar.svg'
+          return avatar
         }
       }
     },

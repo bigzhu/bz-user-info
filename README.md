@@ -1,6 +1,6 @@
-# bz-base
+# bz-user-info
 
-> bz-base
+> bz-user-info
 
 ## Build Setup
 

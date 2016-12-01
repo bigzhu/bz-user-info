@@ -6,7 +6,7 @@
       :parms="parms"
       :code="code"
       >
-      <bz :el="$el" element_class=".ui.card" :call_back="call_back"></bz>
+      <bz></bz>
     </doc>
   </div>
 </template>
@@ -18,12 +18,6 @@
     components: {
       Bz,
       Doc
-    },
-    route: {
-      deactivate: function (transition) {
-        this.$broadcast('unbind-scroll')
-        transition.next()
-      }
     },
     data: function () {
       return {
