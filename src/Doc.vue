@@ -1,6 +1,3 @@
-<style lang=less>
-</style>
-
 <template>
   <div>
     <doc :name="name"
@@ -9,15 +6,6 @@
       :parms="parms"
       :code="code"
       >
-      <div class="ui grid">
-        <div  v-for="data in datas" class="sixteen wide column">
-          <div class="ui card">
-            <div class="content">
-              <a class="description">{{data}}</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <bz :el="$el" element_class=".ui.card" :call_back="call_back"></bz>
     </doc>
   </div>

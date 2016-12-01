@@ -1,11 +1,3 @@
-<style lang='less'>
-  .hide{
-    display: none
-  }
-  .icon.github{
-    color:black
-  }
-</style>
 <template>
   <div class="ui piled center aligned segment">
     <h4 class="ui header">{{user_info.user_name}}</h4>
@@ -29,7 +21,7 @@
 
       <div class="inline field">
         <label>
-          <a :class="{ disabled: !user_info.twitter }" href="https://twitter.com/{{user_info.twitter}}" target="_blank" class="ui circular twitter icon button" data-content="Twitter">
+          <a :class="{ disabled: !user_info.twitter }" :href="'https://twitter.com/'+user_info.twitter" target="_blank" class="ui circular twitter icon button" data-content="Twitter">
             <i class="twitter icon"></i>
           </a>
         </label>
@@ -38,7 +30,7 @@
 
       <div class="inline field">
         <label>
-          <a :class="{ disabled: !user_info.github }" href="https://github.com/{{user_info.github}}" target="_blank" class="ui circular github icon button" data-content="Github">
+          <a :class="{ disabled: !user_info.github }" :href="'[https://github.com/'+user_info.github" target="_blank" class="ui circular github icon button" data-content="Github">
             <i class="github icon"></i>
           </a>
         </label>
@@ -47,7 +39,7 @@
 
       <div class="inline field">
         <label>
-          <a :class="{ disabled: !user_info.instagram }" href="https://instagram.com/{{user_info.instagram}}" target="_blank" class="ui circular instagram icon button" data-content="Instagram">
+          <a :class="{ disabled: !user_info.instagram }" :href="'https://instagram.com/'+user_info.instagram" target="_blank" class="ui circular instagram icon button" data-content="Instagram">
             <i class="instagram icon"></i>
           </a>
         </label>
@@ -56,7 +48,7 @@
 
       <div class="inline field">
         <label>
-          <a :class="{ disabled: !user_info.tumblr }" href="http://{{user_info.tumblr}}.tumblr.com" target="_blank" class="ui circular tumblr icon button" data-content="Tumblr">
+          <a :class="{ disabled: !user_info.tumblr }" :href="'http://'+user_info.tumblr+'.tumblr.com'" target="_blank" class="ui circular tumblr icon button" data-content="Tumblr">
             <i class="tumblr icon"></i>
           </a>
         </label>
@@ -208,3 +200,12 @@
     }
   }
 </script>
+
+<style>
+  .hide{
+    display: none
+  }
+  .icon.github{
+    color:black
+  }
+</style>
